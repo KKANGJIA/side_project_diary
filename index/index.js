@@ -40,7 +40,7 @@ if( PLDay !== 6 ) {
     const dates = prevDates.concat(thisDates, nextDates);
 
     dates.forEach((date, i) => {
-        dates[i] = `<div class="date">${date}</div>`;
+        dates[i] = `<a class="date" href="../diary/diary.html"><div>${date}</div></a>`;
       })
 
     document.querySelector('.dates').innerHTML = dates.join('');

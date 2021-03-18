@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diary</title>
+    <link rel="stylesheet" href="./diary.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6b4de952c8.js" crossorigin="anonymous"></script>
+    <script src="./diary.js" defer></script>
+</head>
+<body>
+    <header class="header">
+    <a href="../index/index.html"><h1 class="header__title">Diary</h1></a>
+        <div class="nav">
+            <div class="nav__date">
+                <p class="nav__date__name">Date</p>
+                <input class="nav__date__input" type="text"/>
+            </div>
+            <div class="divider"></div>
+            <p class="weather">Weather</p>
+                <div class="weather__imgs"></div>
+                <div class="weather__des"></div>
+            <div class="divider"></div>
+            <div class="nav__title">
+                <p class="nav__title__name">Title</p>
+                <input class="nav__title__input" type="text"/>
+            </div>
+            <div class="divider"></div>
+            <p class="mood">Mood</p>
+                <div class="mood__imgs"></div>
+                <div class="mood__des"></div>
+            <div class="divider"></div>
+        </div>
+        <div class="container">   
+            <textarea class="container__text" placeholder="안녕하세요. 당신만의 일기장입니다. 
+
+오늘 하루를 자유롭게 기록해보세요 : )"></textarea>
+        </div>
+
+        <button class="submitBtn">기록하기</button>
+    </header>
+    <footer class="footer">
+       (C) 2020 강지아 all rights reserved. 
+    </footer>
+</body>
+</html>

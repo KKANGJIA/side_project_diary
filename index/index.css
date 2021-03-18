@@ -1,0 +1,107 @@
+body {
+  width: 500px;
+  margin: auto;
+  height: 100%;
+  margin-top: 30px;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 30px;
+  cursor: pointer;
+  margin: auto;
+  color: powderblue;
+  transition: transform 300ms ease;
+}
+button:hover {
+  transform: scale(1.5);
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  font-size: 20px;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+  margin: auto;
+}
+
+.calender {
+  margin: 30px 0px;
+}
+
+.calender__nav {
+  display: flex;
+  margin-top: 30px;
+}
+
+.year-month {
+  font-size: 25px;
+}
+
+.content {
+  display: flex;
+  font-size: 1.5em;
+  margin: auto;
+}
+
+.days {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.day {
+  width: calc(100% / 7);
+  text-align: center;
+  /* display: none; */
+}
+
+.dates {
+  display: flex;
+  flex-flow: row wrap;
+  /* 적당한 줄바꿈을 원할 때 */
+  height: 300px;
+  line-height: 60px;
+}
+
+a {
+  width: calc(100% / 7);
+  /* 너비를 똑같이 나누고 싶을때 calc를 사용하기 */
+  text-align: center;
+  cursor: pointer;
+  transition: transform 300ms ease;
+  outline-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.date {
+  width: calc(100% / 7);
+  /* 너비를 똑같이 나누고 싶을때 calc를 사용하기 */
+  text-align: center;
+  cursor: pointer;
+  transition: transform 300ms ease;
+}
+.date:hover {
+  transform: scale(1.5);
+}
+
+.sunday {
+  color: red;
+}
+
+.friday {
+  color: blue;
+}
+
+/* diary */
