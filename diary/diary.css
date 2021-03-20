@@ -113,6 +113,9 @@ a {
 .mood__img:hover {
   transform: scale(1.1);
 }
+.mood__img.selected {
+  border: 5px solid #000000;
+}
 
 .mood__des {
   margin: 10px 100px;
@@ -149,15 +152,24 @@ a {
 
 .submitBtn {
   position: absolute;
-  left: 50%;
+  left: 48%;
+  margin: 30px 0px;
+  font-size: 1em;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  cursor: pointer;
+  border: transparent;
+  padding: 10px;
 }
 
 .footer {
   width: 80%;
   text-align: center;
-  margin: 20px auto;
+  margin: auto;
   color: lightgrey;
   font-size: 0.7em;
+  margin-top: 130px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {

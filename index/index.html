@@ -7,17 +7,18 @@
     <title>Diary</title>
     <link rel="stylesheet" href="./index.css">
     <script src="https://kit.fontawesome.com/6b4de952c8.js" crossorigin="anonymous"></script>
-    <script src="../main.js" defer></script>
+    <script src="./index.js" defer></script>
 </head>
 <body>
     <section class="calender">
-        <h1>Calender</h1>
-        <header class="calender__nav">
-            <button class="calender__btn prev">
+        <h1 class="calender__title">Calender</h1>
+        <p class="calender__info">일기를 작성하려면 달력 안에 날짜를 클릭해주세요 : )</p>
+        <header class="calender__btn">
+            <button class="calender__btn-prev">
                 <i class="fas fa-chevron-left"></i>
             </button>
             <div class="year-month"></div>
-            <button class="calender__btn next">
+            <button class="calender__btn-next">
                 <i class="fas fa-chevron-right"></i>
             </button>
         </header>
@@ -31,6 +32,10 @@
                 <div class="day friday">토</div>
         </div>
         <div class="dates"></div>
+
+        <footer class="footer">
+            (C) 2020 강지아 all rights reserved. 
+         </footer>
     </section>
 </body>
 </html>

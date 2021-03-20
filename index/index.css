@@ -19,10 +19,6 @@ button:hover {
   transform: scale(1.5);
 }
 
-h1 {
-  text-align: center;
-}
-
 ul {
   list-style: none;
   display: flex;
@@ -39,7 +35,19 @@ li {
   margin: 30px 0px;
 }
 
-.calender__nav {
+.calender__title {
+  text-align: center;
+}
+
+.calender__info {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 0.7em;
+  color: grey;
+}
+
+.calender__btn {
   display: flex;
   margin-top: 30px;
 }
@@ -104,4 +112,12 @@ a {
   color: blue;
 }
 
-/* diary */
+.footer {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  color: lightgrey;
+  font-size: 0.7em;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
