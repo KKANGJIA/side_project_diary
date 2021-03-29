@@ -42,9 +42,19 @@ li {
 .calender__info {
   margin: auto;
   text-align: center;
-  margin-bottom: 40px;
+  margin: 40px 0px;
   font-size: 0.7em;
   color: grey;
+}
+
+.nav__diary_movie_book a {
+  margin: auto;
+  text-align: center;
+}
+
+.nav__diary_movie_book {
+  border-top: 1px dashed rgb(177, 174, 174);
+  border-bottom: 1px dashed rgb(177, 174, 174);
 }
 
 .calender__btn {
@@ -120,4 +130,30 @@ a {
   font-size: 0.7em;
   margin-top: 100px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .calender {
+    margin: 0px 50px;
+  }
+
+  .calender__title {
+    font-size: 1.2em;
+  }
+
+  .nav__diary_movie_book a {
+    font-size: 0.7em;
+  }
+
+  .calender__btn-prev {
+    font-size: 23px;
+  }
+
+  .calender__btn-next {
+    font-size: 23px;
+  }
+
+  .year-month {
+    font-size: 18px;
+  }
 }

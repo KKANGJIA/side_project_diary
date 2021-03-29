@@ -8,6 +8,7 @@ const dateInput = document.querySelector('.nav__date__input');
 const titleInput = document.querySelector('.nav__title__input');
 const containerText = document.querySelector('.container__text');
 const submitBtn = document.querySelector('.submitBtn');
+const footer = document.querySelector('.footer');
 
 //1. 일기장이 열리면 바로 실행되어야 할 기능들
 (function onload() {
@@ -45,22 +46,35 @@ function onAlertFisish() {
 };
 
 function onAddList() {
+    footer.remove(0);
+
     const title = document.createElement('h1');
     title.textContent = `작성된 일기장 리스트`;
-    title.style.fontSize = "2em";
-    title.style.marginLeft = "50px";
+    title.style.fontSize = "1.5em";
+    title.style.marginLeft = "60px";
+    title.style.marginTop = '120px';
 
     const list = document.createElement('div');
     list.setAttribute('class', 'titleList');
     list.textContent = `Title: ${titleInput.value}`;
     list.style.border = '3px solid black';
     list.style.padding = '10px 10px';
-    list.style.margin = '10px 0px';
-    list.style.width = '100%';
+    list.style.margin = '10px auto';
+    list.style.width = '90%';
     list.style.height = 'auto';
+    list.style.textAlign = 'center';
 
+    const fooDiv = document.createElement('div');
+    fooDiv.setAttribute('class', 'footerDiv');
+    // fooDiv.stlye.width = '80%';
+    // footerDiv.stlye.textAlign = 'center';
+    // footerDiv.stlye.margin = 'auto';
+    // footerDiv.stlye.margin = 'auto';
+    
     document.body.appendChild(title);
     document.body.appendChild(list);
+    document.body.appendChild(fooDiv);
+    fooDiv.appendChild(footer);
 }
 
 

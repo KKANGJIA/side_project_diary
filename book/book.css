@@ -1,0 +1,267 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*  */
+:root {
+  --media-font-size: 0.8em;
+  --font-size: 1.1em;
+  --point-color: rgb(19, 227, 255);
+}
+
+body {
+  font-family: "SCDream3";
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
+  height: 90%;
+  padding-top: 30px;
+}
+
+section {
+  background-color: rgba(211, 211, 211, 0.356);
+  padding-bottom: 30px;
+}
+
+button {
+  outline: none;
+  border: 0px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--point-color);
+  font-size: var(--font-size);
+}
+
+a {
+  color: var(--point-color);
+}
+
+@font-face {
+  font-family: "SCDream3";
+  src: url("../font/SCDream3.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.Main_nav {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  align-items: center;
+  margin: 0 50px;
+  color: var(--point-color);
+  font-size: 1.3em;
+  cursor: pointer;
+}
+.book__content {
+  margin: auto;
+  text-align: center;
+}
+
+.book__content-img {
+  width: 250px;
+  height: 350px;
+}
+
+.book__content-title {
+  margin-top: 20px;
+  font-size: var(--font-size);
+}
+
+.book__content-rate {
+  color: var(--point-color);
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: var(--font-size);
+}
+
+.book_info {
+  margin: 30px 50px;
+  font-size: var(--font-size);
+  text-align: left;
+}
+.book_info p {
+  padding: 5px 0px;
+}
+
+.divider {
+  margin-top: 30px;
+  height: 1px;
+  width: 100%;
+  background-color: lightgray;
+}
+.book_des {
+  margin-top: 30px;
+  width: 100%;
+  height: 200px;
+  font-size: var(--font-size);
+  padding: 10px;
+  font-family: "SCDream3";
+  border: 0px;
+  outline: none;
+  border-radius: 10px;
+}
+
+.footer {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  color: lightgrey;
+  font-size: 0.7em;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .Main_nav {
+    height: 50px;
+    padding: 15px 0px;
+  }
+
+  .book__content-img {
+    width: 100px;
+    height: 150px;
+  }
+
+  .book__content-title {
+    margin: 5px 0px;
+    font-size: var(--media-font-size);
+  }
+
+  .book_info {
+    font-size: var(--media-font-size);
+  }
+
+  .book_des {
+    width: 93%;
+    font-size: var(--media-font-size);
+  }
+
+  button {
+    font-size: var(--media-font-size);
+  }
+}
