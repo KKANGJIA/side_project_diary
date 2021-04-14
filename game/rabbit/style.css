@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "SCDream3";
+  src: url("../font/SCDream3.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+button {
+  outline: none;
+  border: none;
+  color: rgb(8, 8, 8);
+  font-size: 30px;
+  border-radius: 10px;
+  width: 120px;
+  height: 80px;
+  border: 2px solid #15ff00;
+  background-color: #fff;
+  margin: auto;
+  text-align: center;
+  margin-left: 40px;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  font-family: "SCDream3";
+}
+
+.backImg {
+  width: 100%;
+  height: 640px;
+  position: relative;
+  opacity: 75%;
+}
+
+.game__Bar {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  transform: translateY(-630px);
+}
+
+.startBtn {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  transition: transform 300ms ease;
+}
+.startBtn:hover {
+  transform: scale(1.1);
+}
+
+.timer {
+  margin-bottom: 10px;
+  color: rgb(250, 1, 175);
+}
+
+.score {
+  margin-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+}
+
+.info__des {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+
+.gameField {
+  width: 80%;
+  height: 380px;
+  transform: translateY(-400px);
+  margin-left: 250px;
+  margin-right: 0px;
+}
+
+.info__Img {
+  width: 200px;
+  height: 200px;
+}
+
+.eggImg {
+  width: 120px;
+  height: 120px;
+  transition: transform 300ms ease;
+}
+.eggImg:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  button {
+    font-size: 18px;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+  }
+
+  .game__Bar {
+    width: 70%;
+    transform: translateY(-630px);
+    display: flex;
+  }
+
+  .gameField {
+    width: 90%;
+    height: 380px;
+    margin-left: 65px;
+    margin-right: 0px;
+  }
+
+  .info__Img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .info__des {
+    font-size: 13px;
+  }
+}
