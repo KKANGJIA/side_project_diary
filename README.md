@@ -1,4 +1,5 @@
 Project title: diary project
+
 프로젝트 설명: 달력을 기반으로 만든 어플리케이션으로 해당 날짜나 위의 네비게이션 바의 기능을 클릭하면 아래의 기능을 다 사용할 수 있습니다.
 단순한 달력을 기반으로 한 일기장이 아닌, 사용자의 취미나 재미를 고려해서 영화나 책을 리뷰할 수 있고 기념일에 어울리는 게임도 제공하고 있습니다.
 (그림일기는 추후에 제작하여 기능을 추가할 예정입니다.)
@@ -8,7 +9,7 @@ Project title: diary project
 [사용한 에디터 및 프로그래밍 언어]
 
 ![image](https://user-images.githubusercontent.com/70791860/116633269-093a4600-a994-11eb-9eea-5ae688748fa5.png)
-![image](https://user-images.githubusercontent.com/70791860/116633472-882f7e80-a994-11eb-82ee-de7e8133b3f7.png)
+<img src="https://user-images.githubusercontent.com/70791860/116633472-882f7e80-a994-11eb-82ee-de7e8133b3f7.png", width="300">
 
 
 
